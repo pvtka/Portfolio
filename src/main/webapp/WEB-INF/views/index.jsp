@@ -74,6 +74,7 @@
     </div>
     <div class="about-us--image"><img src="<c:url value="resources/images/about-us.jpg"/>" alt="People in circle"/>
     </div>
+
 </section>
 
 <section class="help">
@@ -114,7 +115,7 @@
 
 </section>
 
-<%@ include file="/WEB-INF/views/header.jsp" %>
+<%@ include file="/WEB-INF/views/footer.jsp" %>
 
 <script src="<c:url value="resources/js/app.js"/>"></script>
 </body>

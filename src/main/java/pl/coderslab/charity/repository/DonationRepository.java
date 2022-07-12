@@ -11,8 +11,8 @@ import java.util.Optional;
 @Repository
 public interface DonationRepository extends JpaRepository<Donation, Long> {
 
-    @Query(value= "SELECT SUM(c.quantity) FROM Donation c")
-    public int allDonations();
+    @Query("SELECT SUM(c.quantity) FROM Donation c")
+    Optional <Integer> allBags();
 
 
 

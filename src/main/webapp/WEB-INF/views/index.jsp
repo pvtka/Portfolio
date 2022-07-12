@@ -19,7 +19,7 @@
 <section class="stats">
     <div class="container container--85">
         <div class="stats--item">
-            <em>13</em>
+            <em>${allDonations}</em>
 
             <h3>Oddanych worków</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius est beatae, quod accusamus illum
@@ -27,7 +27,7 @@
         </div>
 
         <div class="stats--item">
-            <em>5</em>
+            <em>${donationsCount}</em>
             <h3>Przekazanych darów</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam magnam, sint nihil cupiditate quas
                 quam.</p>
@@ -79,7 +79,6 @@
 
 <section class="help">
     <h2>Komu pomagamy?</h2>
-
     <!-- SLIDE 1 -->
     <div class="help--slides active" data-id="1">
         <p>W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy.

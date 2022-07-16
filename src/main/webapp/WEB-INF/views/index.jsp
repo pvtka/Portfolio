@@ -72,32 +72,19 @@
     <div class="help--slides active" data-id="1">
         <p>W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy.
             Możesz sprawdzić czym się zajmują.</p>
-
         <ul class="help--slides-items">
-            <li>
+            <c:forEach var="institution" items="${institutions}" varStatus="status">
+                <c:if test="${status.count % 2!=0}">
+                    <li>
+                </c:if>
                 <div class="col">
-                    <div class="title">Fundacja "Dbam o Zdrowie"</div>
-                    <div class="subtitle">Cel i misja: Pomoc dzieciom z ubogich rodzin.</div>
+                    <div class="title">Fundacja ${institution.name}</div>
+                    <div class="subtitle">Cel i misja: ${institution.description}</div><br><br>
                 </div>
-
-                <div class="col">
-                    <div class="title">Fundacja "A kogo"</div>
-                    <div class="subtitle">Cel i misja: Pomoc wybudzaniu dzieci ze śpiączki.</div>
-                </div>
-            </li>
-
-            <li>
-                <div class="col">
-                    <div class="title">Fundacja “Dla dzieci"</div>
-                    <div class="subtitle">Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.</div>
-                </div>
-                <div class="col">
-                    <div class="title">Fundacja “Bez domu”</div>
-                    <div class="subtitle">Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania</div>
-                </div>
-
-            </li>
-
+                <c:if test="${status.count % 2==0}">
+                    </li>
+                </c:if>
+            </c:forEach>
         </ul>
     </div>
 

@@ -27,6 +27,7 @@ public class Donation {
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate pickUpDate;
     private LocalTime pickUpTime;
+    private String phoneNumber;
     private String pickUpComment;
 
     public Donation() {
@@ -102,6 +103,14 @@ public class Donation {
 
     public void setPickUpTime(LocalTime pickUpTime) {
         this.pickUpTime = pickUpTime;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public String getPickUpComment() {
